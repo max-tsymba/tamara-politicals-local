@@ -1,6 +1,7 @@
 import { BaseContainer, BaseMenuLink } from 'UI';
 import LandingNavbarStyled, {
   LandingLogoStyled,
+  LandingMenuStyled,
   LandingNavbarInner,
 } from './LandingNavbar.styled';
 
@@ -10,7 +11,10 @@ const LandingNavbar = () => {
       <BaseContainer>
         <LandingNavbarInner>
           <LandingLogoStyled>Logo.</LandingLogoStyled>
-          <BaseMenuLink label="About Us" href="/about-us" />
+
+          <LandingMenuStyled>
+            <BaseMenuLink label="About Us" href="/about-us" hover />
+          </LandingMenuStyled>
         </LandingNavbarInner>
       </BaseContainer>
     </LandingNavbarStyled>

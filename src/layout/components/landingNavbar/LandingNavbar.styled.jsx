@@ -13,6 +13,7 @@ const LandingNavbarInner = styled(Box)(() => ({
   width: '100%',
   display: 'flex',
   alignItems: 'center',
+  position: 'relative',
 }));
 
 const LandingLogoStyled = styled(Box)(() => ({
@@ -21,5 +22,15 @@ const LandingLogoStyled = styled(Box)(() => ({
   fontWeight: 700,
 }));
 
-export { LandingNavbarInner, LandingLogoStyled };
+const LandingMenuStyled = styled(Box)(() => ({
+  display: 'flex',
+  alignItems: 'center',
+  gap: 30,
+  position: 'absolute',
+  left: '50%',
+  top: '50%',
+  transform: 'translate(-50%, -50%)',
+}));
+
+export { LandingNavbarInner, LandingLogoStyled, LandingMenuStyled };
 export default LandingNavbarStyled;

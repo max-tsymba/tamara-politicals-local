@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  pdf-dev-nginx:
+    container_name: pdf-dev-nginx
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '3008:80'
+    volumes:
+      - ./:/project
+      - /node_modules
